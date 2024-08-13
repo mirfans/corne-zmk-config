@@ -35,16 +35,16 @@
 &kp ESC           &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BSPC
 &kp LEFT_CONTROL  &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp I    &kp SEMICOLON  &kp SQT
 &kp LEFT_SHIFT    &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH      &kp ENTER
-                                &to 3  &to 1  &kp SPACE    &kp SPACE  &to 2  &to 4
+                                &mo 3  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &mo 4
             >;
         };
 
         numb_layer {
             label = "SYMB";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6    &kp N7    &kp N8   &kp N9  &kp N0  &kp EQUAL  &kp DEL
-&kp TAB       &mkp MCLK     &none         &none         &none   &none           &kp HOME  &kp END  &none   &none   &none      &kp RET
-&kp CAPS      &none         &none         &none         &none   &kp MINUS       &none     &none    &none   &none   &none      &none
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6    &kp N7    &kp N8   &kp N9  &kp N0  &kp UNDERSCORE  &kp PLUS
+&kp TAB       &kp LEFT_WIN  &mkp MCLK     &none         &none   &none           &kp HOME  &kp END  &none   &none   &none           &kp DEL
+&kp CAPS      &none         &none         &none         &none   &none           &none     &none    &none   &none   &none           &kp ENTER
                                           &none         &none   &none           &none     &none    &none
             >;
         };
@@ -52,20 +52,20 @@
         symbol_layer {
             label = "NAV";
             bindings = <
-&kp TILDE    &kp EXCLAMATION  &kp POUND  &kp DLLR  &kp PRCNT  &kp CARET        &kp AMPS       &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp EQUAL
-&kp LA(TAB)  &none            &none      &none     &none      &none            &kp LEFT       &kp DOWN      &kp UP                &kp RIGHT              &none           &kp RET
-&kp TAB      &none            &none      &none     &none      &none            &none          &none         &none                 &none                  &none           &none
-                                         &kp LCMD  &kp LSHFT  &to DEFAULT_L    &to SYMBOLS_L  &kp SPACE     &to NUMBERS_L
+&kp TILDE    &kp EXCLAMATION  &kp POUND  &kp DLLR  &kp PRCNT  &kp CARET    &kp AMPS  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp EQUAL
+&kp LA(TAB)  &none            &none      &none     &none      &none        &kp LEFT  &kp DOWN      &kp UP                &kp RIGHT              &none           &kp RET
+&kp TAB      &kp RS(TAB)      &none      &none     &none      &none        &none     &none         &none                 &none                  &none           &kp LS(ENTER)
+                                         &none     &none      &none        &none     &none         &none
             >;
         };
 
         numbers_layer {
             label = "NUM";
             bindings = <
-&kp ESC  &none  &none  &none     &none      &none            &none          &hm F7 N7  &hm F8 N8  &hm F9 N9  &none        &hm DEL BSPC
-&none    &none  &none  &none     &kp STAR   &kp PLUS         &kp EQUAL      &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F12 DOT  &kp RET
-&kp TAB  &none  &none  &none     &kp FSLH   &kp MINUS        &hm F10 N0     &hm F1 N1  &hm F2 N2  &hm F3 N3  &kp COMMA    &to ARROWS_L
-                       &kp LCMD  &kp LSHFT  &to DEFAULT_L    &to SYMBOLS_L  &kp SPACE  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
 
